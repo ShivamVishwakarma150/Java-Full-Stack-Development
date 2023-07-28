@@ -64,3 +64,34 @@ In a Distributed VCS, each developer has a complete copy of the entire repositor
 Git is an example of a Distributed VCS, making it highly popular among developers. It allows teams to work on the same project simultaneously and merge their changes seamlessly. Each developer has a local copy of the entire repository, enabling them to work offline and commit changes locally. These changes can later be pushed to the central repository or shared with other team members.
 
 In summary, VCS is essential for software development as it enables version management, collaboration, and code history tracking. Git, as a distributed VCS, offers robust features that cater to the needs of modern development teams.
+
+<br/>
+<br/>
+
+**Centralized Version Control System:**
+
+A Centralized Version Control System (CVCS) is a type of Version Control System where developers collaborate on code in a single repository, making it easier to track changes and manage code history. Examples of CVCS include SVN (Subversion), Perforce, and CVS (Concurrent Versions System).
+
+**Working of Centralized Version Control:**
+
+1. **Collaboration:** In a CVCS, developers can work together on a project by connecting to a central repository. They can make changes, commit them to the repository, and share their work with other team members.
+
+2. **Central Repository:** The central repository serves as a central storage location for all versions of the codebase. It contains all the project files and their version history.
+
+3. **Checkout and Push:** Developers use the "checkout" command to download a copy of the codebase from the central repository to their local machine. After making changes, they "push" the modified code back to the central repository.
+
+**Advantages of Centralized Version Control:**
+
+1. **Collaboration:** CVCS allows multiple developers to work on the same project concurrently. It provides visibility into what others are doing on the project.
+
+2. **Control and Management:** Administrators have full control over user access and permissions. They can manage who can do what, ensuring a structured development environment.
+
+**Disadvantages of Centralized Version Control:**
+
+1. **Single Point of Failure:** A significant drawback of CVCS is the presence of a single central server. If this server goes down due to network traffic or hardware failure, development work can come to a halt until the server is restored.
+
+2. **Data Loss Risk:** In case of a disk failure on the central server, without proper backups, data loss can occur. If backup practices are not diligently followed, important code changes may be lost.
+
+**Summary:**
+
+Centralized Version Control Systems offer collaboration and control benefits. They have been the standard VCS for many years. However, they come with the risk of a single point of failure and potential data loss if proper backup measures are not in place. The development community has gradually shifted towards Distributed Version Control Systems like Git, which offer more resilience and flexibility in development workflows.
