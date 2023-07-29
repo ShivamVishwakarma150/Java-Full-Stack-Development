@@ -50,6 +50,9 @@ A Version Control System (VCS) is a system that records changes made to a file o
 
 **Types of Version Control Software (VCS):**
 There are three types of Version Control Software:
+
+<br/>
+
 a. **Local VCS:**
 A Local VCS is used to maintain file versions and retrieve files based on specific versions. It stores all versions of files in the same directory and tracks changes within the local machine. However, it lacks collaboration features and is not suitable for multiple developers working together.
 
@@ -68,7 +71,7 @@ In summary, VCS is essential for software development as it enables version mana
 <br/>
 <br/>
 
-**Centralized Version Control System:**
+# **Centralized Version Control System:**
 
 A Centralized Version Control System (CVCS) is a type of Version Control System where developers collaborate on code in a single repository, making it easier to track changes and manage code history. Examples of CVCS include SVN (Subversion), Perforce, and CVS (Concurrent Versions System).
 
@@ -95,3 +98,63 @@ A Centralized Version Control System (CVCS) is a type of Version Control System 
 **Summary:**
 
 Centralized Version Control Systems offer collaboration and control benefits. They have been the standard VCS for many years. However, they come with the risk of a single point of failure and potential data loss if proper backup measures are not in place. The development community has gradually shifted towards Distributed Version Control Systems like Git, which offer more resilience and flexibility in development workflows.
+
+<br/>
+<br/>
+
+## **Local Version Control System (LVCS) and Centralized Version Control System (CVCS):**
+
+In both Local Version Control System (LVCS) and Centralized Version Control System (CVCS), it is not possible to access the complete history of changes made to the files. These systems only provide the latest version of the code, but not the entire history of changes.
+
+**Explanation:**
+
+1. **LVCS (Local Version Control System):**
+   In LVCS, version control is managed on the local machine. Developers have a copy of the entire codebase on their local system, and the version control system tracks changes made to files. However, LVCS does not have a centralized repository to store the complete history of changes. As a result, developers can access only the latest version of the code they have on their local machine.
+
+   **Example:** Suppose a file named "file.txt" has the following version history in an LVCS:
+   - file.txt (Version 1.0)
+   - file.txt (Version 1.1)
+   - file.txt (Version 1.2)
+   - file.txt (Version 1.3)
+
+   Developers can access and view the latest version (Version 1.3) of "file.txt" on their local machine. However, they cannot access the complete history of changes (i.e., Versions 1.0 to 1.2) from the LVCS.
+
+2. **CVCS (Centralized Version Control System):**
+   In CVCS, there is a central server (repository) that stores the codebase and version history. Developers can check out the latest version from the central server and make changes locally. However, the central server does not maintain the entire history of changes for each file. When developers push their changes to the central server, they are essentially pushing the latest changes only.
+
+   **Example:** Consider the same file "file.txt" in a CVCS with the following version history:
+   - file.txt (Version 1.0)
+   - file.txt (Version 1.1)
+   - file.txt (Version 1.2)
+   - file.txt (Version 1.3)
+
+   Developers can retrieve the latest version (Version 1.3) of "file.txt" from the CVCS server, but they cannot access the complete history of changes (i.e., Versions 1.0 to 1.2) from the central server.
+
+**Summary:**
+
+Both LVCS and CVCS provide only the latest version of the code and do not maintain the complete history of changes. In contrast, Distributed Version Control Systems (DVCS) like Git maintain the entire history, allowing developers to access the complete evolution of the codebase, including all versions and changes made over time.
+
+<br/>
+<br/>
+
+# **Distributed Version Control System (DVCS):**
+
+A Distributed Version Control System (DVCS) is a type of Version Control System where developers not only get the latest version of the code but also the complete history of changes made to the files. Examples of DVCS include Git, Mercurial, Darcs, and Bazaar.
+
+**Working of Distributed Version Control:**
+
+1. **Complete History:** In DVCS, every developer has a full copy of the repository, including the entire history of versions. This means that developers can access the complete history of changes made to the codebase, not just the latest version.
+
+2. **Push and Snapshot:** In DVCS, when developers push their changes to the remote repository, they are not just pushing the latest snapshot of the files. Instead, they are pushing the entire changeset, which includes all the changes made since the last synchronization.
+
+3. **Offline Work:** DVCS allows developers to work offline, as they have a local copy of the entire repository. If the main server (remote repository) goes down, developers can continue making changes locally. Once the server is back online, they can synchronize their changes with the remote repository.
+
+**Advantages of Distributed Version Control:**
+
+1. **Complete History:** DVCS provides a complete and detailed history of all changes made to the codebase. This level of granularity allows developers to understand the evolution of the project thoroughly.
+
+2. **Offline Work and Resilience:** The local repository in DVCS provides resilience against server failures. Developers can continue working and making commits even when the remote server is not accessible.
+
+**Summary:**
+
+Distributed Version Control Systems (DVCS) like Git have gained popularity due to their ability to provide a complete history of changes and support offline work. Developers have a local repository with the entire history, enabling them to work independently and collaborate seamlessly with others when the main server is back online. This decentralized approach enhances collaboration and provides a higher level of data integrity and reliability compared to Centralized Version Control Systems.
