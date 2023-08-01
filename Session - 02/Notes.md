@@ -157,4 +157,4 @@ A Distributed Version Control System (DVCS) is a type of Version Control System 
 
 **Summary:**
 
-Distributed Version Control Systems (DVCS) like Git have gained popularity due to their ability to provide a complete history of changes and support offline work. Developers have a local repository with the entire history, enabling them to work independently and collaborate seamlessly with others when the main server is back online. This decentralized approach enhances collaboration and provides a higher level of data integrity and reliability compared to Centralized Version Control Systems.
+Distributed Version Control Systems (DVCS) like Git have gained popularity due to their ability to provide a complete history of changes and support offline work. Developers have a local repository with the entire history, enabling them to work independently and collaborate seamlessly with others when the main server is back online. This decentralized approach enhances collaboration and provides a higher level of data integrity and reliability compared to Centralized Version Control Systems..
